@@ -1,0 +1,111 @@
+<!-- Header -->
+<header>
+  <!-- <a>
+        <object data="/assets/arrow-back.svg" type=""></object>
+    </a>
+    <a>
+        <object data="/assets/arrow-forward.svg" type=""></object>
+    </a> -->
+  <div
+    style="
+      width: min(220px, 25%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <!-- <h1 style="color: #1DB954; font-size: 1.5rem;">Soundnode</h1> -->
+    <img
+      src="/assets/TuneBox_logo.svg"
+      style="max-height: 36px; object-fit: contain; color: #a9aaae"
+      alt=""
+    />
+  </div>
+  <div class="searchbox_container" style="margin-left: 0.25rem">
+    <input type="text" class="searchbox" placeholder="Search" />
+    <a>
+      <object data="/assets/search.svg" class="serch-icon"></object>
+    </a>
+  </div>
+  <a style="margin-inline: 0.5rem; margin-left: auto">
+    <object data="/assets/settings.svg" type=""></object>
+  </a>
+</header>
+<!-- /Header -->
+
+<div
+  style="
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+  "
+>
+  <!-- Container -->
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="personal_container">
+      <div class="account">
+        <div class="account_ph"></div>
+        <div class="account_details">
+          <a class="acc_name" href="#">script x frynn</a>
+          <a class="log_out" href="#">Log out</a>
+        </div>
+      </div>
+      <div class="user_stats">
+        <div class="following">
+          <p class="following_count">69</p>
+          <p class="following_text">following</p>
+        </div>
+        <div class="followers">
+          <p class="followers_count">420</p>
+          <p class="followers_text">followers</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; width: 100%">
+        <p class="main_text">MAIN</p>
+        <app-sidebar-link title="Top 50" linkUri="/top">
+          <ng-template #icon
+            ><object data="/assets/military_tech.svg"></object>
+          </ng-template>
+        </app-sidebar-link>
+        <app-sidebar-link title="Streams" linkUri="/streams">
+          <ng-template #icon
+            ><object data="/assets/cloudy.svg"></object>
+          </ng-template>
+        </app-sidebar-link>
+        <app-sidebar-link title="Likes" linkUri="/likes">
+          <ng-template #icon
+            ><object data="/assets/favorite.svg"></object>
+          </ng-template>
+        </app-sidebar-link>
+        <app-sidebar-link title="Tracks" linkUri="/tracks">
+          <ng-template #icon>
+            <object
+              data="/assets/music.svg"
+              style="width: 24px; aspect-ratio: 1"
+            ></object>
+          </ng-template>
+        </app-sidebar-link>
+        <app-sidebar-link title="Playlists" linkUri="/playlists">
+          <ng-template #icon
+            ><object
+              data="/assets/bookmark.svg"
+              style="width: 24px; aspect-ratio: 1"
+            ></object>
+          </ng-template>
+        </app-sidebar-link>
+      </div>
+    </div>
+  </nav>
+  <!-- /Sidebar -->
+
+  <main class="view-wrapper">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+<!-- Main -->
+<!-- /Main -->
+<!-- /Container -->

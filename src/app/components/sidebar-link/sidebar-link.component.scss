@@ -1,0 +1,38 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 7px 15px;
+    color: #bcbcbc;
+    align-items: center;
+    width: 100%;
+    border-left-color: #e6e6e600;
+    border-left-width: 2px;
+    border-left-style: solid;
+    // border-left-width: 0;
+    transition: all 150ms ease-in-out;
+
+    & *:not(a) {
+        pointer-events: none;
+    }
+}
+
+.container:hover,
+.container.active {
+    color: #fff;
+    padding-inline: 20px;
+}
+
+.container:hover {
+    background-color: #2c2d30;
+}
+
+.container.active {
+    background-color: #2c2d30;
+    border-left-color: #e6e6e6;
+}

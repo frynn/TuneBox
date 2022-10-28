@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.125rem;
+  width: 100%;
+
+  justify-content: center;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}
+
+p {
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .recommended-for-u {
+    font-size: 1.5rem;
+  }
+}
+
+.recommended-for-u {
+  margin-right: auto;
+}
+
+.streams-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-items: center;
+}

@@ -1,0 +1,13 @@
+<a
+  href="#"
+  class="container"
+  [routerLink]="linkUri"
+  [routerLinkActive]="linkActiveClass"
+>
+  <ng-template
+    *ngFor="let icon of icons"
+    [ngTemplateOutlet]="icon"
+    style="display: none"
+  ></ng-template>
+  <p>{{ title }}</p>
+</a>
